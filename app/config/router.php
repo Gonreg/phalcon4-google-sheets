@@ -10,6 +10,14 @@ $router->add(
     '/test',
     [
         'controller' => 'index',
-        'action'     => 'test',
+        'action' => 'index'
     ]
 );
+/*
+$router->add(
+    '/callback',
+    [
+        'controller' => 'index',
+        'action' => 'index',
+    ]
+);*/

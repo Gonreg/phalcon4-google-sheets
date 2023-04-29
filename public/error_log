@@ -1,0 +1,105 @@
+[29-Apr-2023 21:05:25 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:25 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:05:27 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
+[29-Apr-2023 21:53:14 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:53:14 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:53:19 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:53:19 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:53:29 Europe/Minsk] PHP Warning:  require_once(app/config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:53:29 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:53:29 Europe/Minsk] PHP Warning:  require_once(app/config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:53:29 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:56:21 Europe/Minsk] PHP Warning:  require_once(configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:56:21 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 21:57:00 Europe/Minsk] PHP Warning:  require_once(configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:00 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:30 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:30 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:31 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:31 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:31 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:57:31 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:58:39 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:58:39 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:58:48 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/configconfigGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:58:48 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/configconfigGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:59:12 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/configgoogleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:59:12 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/configgoogleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:00:43 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:43 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:43 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:43 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:53 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/config.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/config.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:53 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/config.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:00:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/config.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:01:25 Europe/Minsk] PHP Warning:  require_once(../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:01:25 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:01:26 Europe/Minsk] PHP Warning:  require_once(../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:01:26 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:02:01 Europe/Minsk] PHP Warning:  require_once(/../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:02:01 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
+[29-Apr-2023 22:03:38 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:03:38 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:05:35 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:05:35 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:06:41 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:06:41 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:08:35 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:08:35 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:08:53 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:08:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
+[29-Apr-2023 22:09:41 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/google.php on line 2
+[29-Apr-2023 22:09:41 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/google.php on line 2
+[29-Apr-2023 22:10:52 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+Stack trace:
+#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
+#1 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
+[29-Apr-2023 22:10:53 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+Stack trace:
+#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
+#1 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
+[29-Apr-2023 22:10:53 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+Stack trace:
+#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
+#1 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
