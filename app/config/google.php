@@ -1,4 +1,7 @@
 <?php
+
+use Hybridauth\Provider\Google;
+
 require_once BASE_PATH . '/vendor/autoload.php';
 
 const GOOGLE_CLIENT_ID = '170736721093-ef2hrocttef8pqlukm6ujt3n35rqbl67.apps.googleusercontent.com';
@@ -17,4 +20,5 @@ $config = [
     ]
 ];
 
-$adapter = new HybridauthProviderGoogle( $config );
+//$adapter = new HybridauthProviderGoogle( $config );
+$adapter = new Google($config);

@@ -40,8 +40,6 @@ try {
      * Handle the request
      */
 
-    include APP_PATH . '/config/google.php';
-
     $application = new \Phalcon\Mvc\Application($di);
 
     echo $application->handle($_SERVER['REQUEST_URI'])->getContent();
