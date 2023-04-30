@@ -7,7 +7,7 @@ function appendToSheet(string $id, array $token)
 {
     $client = new Google_Client();
 
-    $client->setAccessToken([$token['access_token'], $token['expires_in']]);
+    $client->setAccessToken(['access_token' => $token['access_token'], 'expires_in' => $token['expires_in']]);
 
     $service = new Google_Service_Sheets($client);
 
