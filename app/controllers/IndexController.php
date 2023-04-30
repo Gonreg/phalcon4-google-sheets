@@ -22,6 +22,10 @@ class IndexController extends ControllerBase
             'access_type' => 'offline'
         ]
     ];
+
+    /**
+     * @throws \Hybridauth\Exception\Exception
+     */
     public function indexAction()
     {
         $adapter = new Google($this->config);

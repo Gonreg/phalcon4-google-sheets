@@ -9,14 +9,14 @@ $router->add(
     '/test',
     [
         'controller' => 'index',
-        'action' => 'index'
+        'action' => 'test'
     ]
 );
-/*
+
 $router->add(
     '/callback',
     [
         'controller' => 'index',
         'action' => 'index',
     ]
-);*/
+);
