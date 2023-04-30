@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once BASE_PATH . '/vendor/autoload.php';
+require_once APP_PATH . '/helpers/sheetFunctions.php';
 
 use Hybridauth\Provider\Google;
 
@@ -31,6 +32,8 @@ class IndexController extends ControllerBase
         $adapter = new Google($this->config);
         $adapter->authenticate();
         $token = $adapter->getAccessToken();
+
+        appendToSheet('1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q', $token);
         var_dump($token);
         die();
     }

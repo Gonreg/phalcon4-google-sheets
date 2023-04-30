@@ -20,5 +20,4 @@ $config = [
     ]
 ];
 
-//$adapter = new HybridauthProviderGoogle( $config );
 $adapter = new Google($config);
