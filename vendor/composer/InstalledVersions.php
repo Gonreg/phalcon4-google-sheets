@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '47047d5dc82ebbe8c543c2022e4afd1b4d6752aa',
+    'reference' => 'f1d26267fe845b25b9cfc44933b04f46585e21ea',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '47047d5dc82ebbe8c543c2022e4afd1b4d6752aa',
+      'reference' => 'f1d26267fe845b25b9cfc44933b04f46585e21ea',
     ),
     'firebase/php-jwt' => 
     array (
@@ -113,6 +113,42 @@ private static $installed = array (
       array (
       ),
       'reference' => '904713c5929655dc9b97288b69cfeedad610c9a1',
+    ),
+    'nette/php-generator' => 
+    array (
+      'pretty_version' => 'v3.6.9',
+      'version' => '3.6.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd31782f7bd2ae84ad06f863391ec3fb77ca4d0a6',
+    ),
+    'nette/utils' => 
+    array (
+      'pretty_version' => 'v3.2.9',
+      'version' => '3.2.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c',
+    ),
+    'phalcon/cli-options-parser' => 
+    array (
+      'pretty_version' => 'v1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1c5a7d0db23a88d8ba14646af75464cbbd115251',
+    ),
+    'phalcon/migrations' => 
+    array (
+      'pretty_version' => 'v2.2.4',
+      'version' => '2.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'df71fb394a9a0840e27ff79d25ac7276dd7f9217',
     ),
     'phpseclib/phpseclib' => 
     array (

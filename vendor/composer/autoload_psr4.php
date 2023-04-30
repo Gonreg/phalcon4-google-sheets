@@ -10,6 +10,8 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'Phalcon\\Migrations\\' => array($vendorDir . '/phalcon/migrations/src'),
+    'Phalcon\\Cop\\' => array($vendorDir . '/phalcon/cli-options-parser/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Hybridauth\\' => array($vendorDir . '/hybridauth/hybridauth/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),

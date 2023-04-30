@@ -5,18 +5,30 @@ $router = $di->getRouter();
 
 $router->handle($_SERVER['REQUEST_URI']);
 
+// API
+
 $router->add(
-    '/test',
+    '/api/add_to_sheet',
     [
         'controller' => 'index',
-        'action' => 'test'
+        'action' => 'sheet'
     ]
 );
 
 $router->add(
-    '/callback',
+    '/api/callback',
     [
         'controller' => 'index',
-        'action' => 'index',
+        'action' => 'callback',
     ]
+);
+
+// WEB
+
+$router->add(
+  '/',
+  [
+      'controller' => 'index',
+      'action' => 'index'
+  ]
 );

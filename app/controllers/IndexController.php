@@ -5,7 +5,7 @@ require_once BASE_PATH . '/vendor/autoload.php';
 require_once APP_PATH . '/helpers/sheetFunctions.php';
 
 use Hybridauth\Provider\Google;
-
+use app\models\ApiToken;
 
 class IndexController extends ControllerBase
 {
@@ -27,21 +27,33 @@ class IndexController extends ControllerBase
     /**
      * @throws \Hybridauth\Exception\Exception
      */
-    public function indexAction()
+    public function sheetAction()
     {
+//        file_put_contents('data.json', json_encode($_POST), FILE_APPEND);
         $adapter = new Google($this->config);
         $adapter->authenticate();
-        $token = $adapter->getAccessToken();
+        $accessToken = $adapter->getAccessToken();
+//        appendToSheet('1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q', $token);
+        $token = new ApiToken();
+        $token->acessToken = $accessToken;
+        $token->save();
+    }
 
-        appendToSheet('1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q', $token);
-        var_dump($token);
-        die();
+    public function callbackAction()
+    {
+        echo 'test';
     }
 
     public function testAction()
     {
         file_put_contents('data.json', json_encode($_POST), FILE_APPEND);
         echo 'Success write';
+    }
+
+    public function indexAction()
+    {
+        $token = ApiToken::findFirst(1);
+        $this->view->token = $token->acess_token;
     }
 }
 
