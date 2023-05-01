@@ -8,7 +8,7 @@ const GOOGLE_CLIENT_ID = '170736721093-ef2hrocttef8pqlukm6ujt3n35rqbl67.apps.goo
 const GOOGLE_CLIENT_SECRET = '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';
 
 $config = [
-    'callback' => 'https://dev.viovan.world/callback',
+    'callback' => 'https://dev.viovan.world/api/callback',
     'keys'     => [
         'id' => GOOGLE_CLIENT_ID,
         'secret' => GOOGLE_CLIENT_SECRET

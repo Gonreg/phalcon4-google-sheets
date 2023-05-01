@@ -1,105 +1,156 @@
-[29-Apr-2023 21:05:25 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+[01-May-2023 13:09:54 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:09:54 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:09:56 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:09:56 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:10:31 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:10:31 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 13:10:36 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 117
+[01-May-2023 17:20:48 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:20:49 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 17:27:10 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:28:10 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:28:12 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:28:30 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:29:39 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:29:40 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:31:18 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:31:23 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:31:36 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:31:37 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:31:54 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:32:36 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 186
+[01-May-2023 17:33:14 Europe/Minsk] PHP Notice:  Access to undefined property app\models\ApiToken::acess_token in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 188
+[01-May-2023 17:42:33 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:42:34 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 17:42:50 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:42:50 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 17:43:12 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:43:13 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 17:44:48 Europe/Minsk] PHP Notice:  Undefined index: id in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 36
+[01-May-2023 17:44:48 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:39
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:25 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 39
+[01-May-2023 17:44:56 Europe/Minsk] PHP Notice:  Undefined index: id in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 36
+[01-May-2023 17:44:56 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:39
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 39
+[01-May-2023 17:45:25 Europe/Minsk] PHP Notice:  Undefined index: id in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 36
+[01-May-2023 17:45:25 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:39
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 39
+[01-May-2023 17:45:41 Europe/Minsk] PHP Notice:  Undefined index: id in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 37
+[01-May-2023 17:45:41 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:40
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 40
+[01-May-2023 17:46:01 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:40
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:26 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 40
+[01-May-2023 17:46:27 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:40
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:05:27 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'Phalcon\Di\FactoryDefault' not found in /home/viovanco/dev.viovan.world/public/index.php:17
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 40
+[01-May-2023 17:46:45 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:40
 Stack trace:
-#0 {main}
-  thrown in /home/viovanco/dev.viovan.world/public/index.php on line 17
-[29-Apr-2023 21:53:14 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:53:14 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:53:19 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:53:19 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:53:29 Europe/Minsk] PHP Warning:  require_once(app/config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:53:29 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:53:29 Europe/Minsk] PHP Warning:  require_once(app/config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:53:29 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:56:21 Europe/Minsk] PHP Warning:  require_once(configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:56:21 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 21:57:00 Europe/Minsk] PHP Warning:  require_once(configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:00 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:30 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:30 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:31 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:31 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:31 Europe/Minsk] PHP Warning:  require_once(app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:57:31 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required 'app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:58:39 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/config/configGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:58:39 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/config/configGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:58:48 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/configconfigGoogle.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:58:48 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/configconfigGoogle.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:59:12 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/configgoogleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:59:12 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/configgoogleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/router.php on line 4
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:20 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 21:59:27 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:00:43 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:43 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:43 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:43 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:53 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/config.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/config.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:53 Europe/Minsk] PHP Warning:  require_once(/home/viovanco/dev.viovan.world/app/controllers/config.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:00:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/home/viovanco/dev.viovan.world/app/controllers/config.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:01:25 Europe/Minsk] PHP Warning:  require_once(../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:01:25 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:01:26 Europe/Minsk] PHP Warning:  require_once(../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:01:26 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:02:01 Europe/Minsk] PHP Warning:  require_once(/../config/googleConfig.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:02:01 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '/../config/googleConfig.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 4
-[29-Apr-2023 22:03:38 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:03:38 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:05:35 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:05:35 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:06:41 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:06:41 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:08:35 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:08:35 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:08:53 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:08:53 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/googleConfig.php on line 2
-[29-Apr-2023 22:09:41 Europe/Minsk] PHP Warning:  require_once(../../vendor/autoload.php): failed to open stream: No such file or directory in /home/viovanco/dev.viovan.world/app/config/google.php on line 2
-[29-Apr-2023 22:09:41 Europe/Minsk] PHP Fatal error:  require_once(): Failed opening required '../../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/viovanco/dev.viovan.world/app/config/google.php on line 2
-[29-Apr-2023 22:10:52 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 40
+[01-May-2023 17:47:01 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:41
 Stack trace:
-#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
-#1 {main}
-  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
-[29-Apr-2023 22:10:53 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 41
+[01-May-2023 17:47:36 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:41
 Stack trace:
-#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
-#1 {main}
-  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
-[29-Apr-2023 22:10:53 Europe/Minsk] PHP Fatal error:  Uncaught Error: Class 'HybridauthProviderGoogle' not found in /home/viovanco/dev.viovan.world/app/config/google.php:20
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 41
+[01-May-2023 17:48:08 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:43
 Stack trace:
-#0 /home/viovanco/dev.viovan.world/public/index.php(43): include()
-#1 {main}
-  thrown in /home/viovanco/dev.viovan.world/app/config/google.php on line 20
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 43
+[01-May-2023 17:48:40 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:43
+Stack trace:
+#0 [internal function]: IndexController->sheetAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'sheetAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/api/add_to_she...')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 43
+[01-May-2023 17:49:33 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:249
+Stack trace:
+#0 [internal function]: IndexController->indexAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'indexAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 249
+[01-May-2023 17:49:34 Europe/Minsk] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php:249
+Stack trace:
+#0 [internal function]: IndexController->indexAction()
+#1 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(IndexController), 'indexAction', Array)
+#2 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#3 /home/viovanco/dev.viovan.world/public/index.php(45): Phalcon\Mvc\Application->handle('/')
+#4 {main}
+  thrown in /home/viovanco/dev.viovan.world/app/controllers/IndexController.php on line 249
+[01-May-2023 17:51:00 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:51:01 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 17:51:28 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 17:51:28 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:05:21 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:05:22 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:05:43 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:05:44 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:06:26 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:06:27 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:09:09 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:09:10 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:09:35 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:09:35 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:10:14 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:10:15 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:10:30 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:10:30 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67
+[01-May-2023 18:11:00 Europe/Minsk] PHP Deprecated:  implode(): Passing glue string after array is deprecated. Swap the parameters in /home/viovanco/dev.viovan.world/vendor/google/apiclient/src/Google/Service/Resource.php on line 291
+[01-May-2023 18:11:01 Europe/Minsk] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/viovanco/dev.viovan.world/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 67

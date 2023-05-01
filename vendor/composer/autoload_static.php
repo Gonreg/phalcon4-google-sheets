@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
+class ComposerStaticInitbda55cfd2466564d222d11aecde6df09
 {
     public static $files = array (
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -31,6 +31,10 @@ class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\OAuth2\\Client\\' => 21,
+        ),
         'H' => 
         array (
             'Hybridauth\\' => 11,
@@ -46,6 +50,10 @@ class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
         'F' => 
         array (
             'Firebase\\JWT\\' => 13,
+        ),
+        'A' => 
+        array (
+            'AmoCRM\\OAuth2\\Client\\Provider\\' => 30,
         ),
     );
 
@@ -78,6 +86,10 @@ class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\OAuth2\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/oauth2-client/src',
+        ),
         'Hybridauth\\' => 
         array (
             0 => __DIR__ . '/..' . '/hybridauth/hybridauth/src',
@@ -105,6 +117,10 @@ class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
         'Firebase\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
+        'AmoCRM\\OAuth2\\Client\\Provider\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/amocrm/oauth2-amocrm/src',
         ),
     );
 
@@ -218,10 +234,10 @@ class ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitaa73277a05ab6c543915de5cb245a0d0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbda55cfd2466564d222d11aecde6df09::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbda55cfd2466564d222d11aecde6df09::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitbda55cfd2466564d222d11aecde6df09::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitbda55cfd2466564d222d11aecde6df09::$classMap;
 
         }, null, ClassLoader::class);
     }

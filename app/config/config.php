@@ -11,9 +11,9 @@ return new \Phalcon\Config([
     'database' => [
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
-        'username'    => 'root',
-        'password'    => '1111',
-        'dbname'      => 'lead',
+        'username'    => 'viovanco_root',
+        'password'    => '-0^?Cy?I*?mn',
+        'dbname'      => 'viovanco_leads',
         'charset'     => 'utf8',
     ],
     'application' => [

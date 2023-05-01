@@ -1,17 +1,1 @@
-{
-  "leads": {
-    "status": [
-      {
-        "id": "2425903",
-        "status_id": "57105898",
-        "pipeline_id": "6753642",
-        "old_status_id": "57105886",
-        "old_pipeline_id": "6753642"
-      }
-    ]
-  },
-  "account": {
-    "id": "31035410",
-    "subdomain": "vkaftancikov"
-  }
-}{"leads":{"status":[{"id":"2425903","status_id":"57105898","pipeline_id":"6753642","old_status_id":"57105894","old_pipeline_id":"6753642"}]},"account":{"id":"31035410","subdomain":"vkaftancikov"}}[]
+{"id":2425903,"name":"test","price":15,"responsible_user_id":9561282,"group_id":0,"status_id":57105898,"pipeline_id":6753642,"loss_reason_id":null,"created_by":9561282,"updated_by":9561282,"created_at":1682792664,"updated_at":1682953859,"closed_at":null,"closest_task_at":null,"is_deleted":false,"custom_fields_values":null,"score":null,"account_id":31035410,"labor_cost":null,"_links":{"self":{"href":"https://vkaftancikov.amocrm.ru/api/v4/leads/2425903?page=1&limit=250"}},"_embedded":{"tags":[],"companies":[{"id":4832531,"_links":{"self":{"href":"https://vkaftancikov.amocrm.ru/api/v4/companies/4832531?page=1&limit=250"}}}]}}

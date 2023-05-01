@@ -3,7 +3,7 @@
 require_once BASE_PATH . '/vendor/autoload.php';
 
 use Hybridauth\Provider\Google;
-function appendToSheet(string $id, array $token)
+function appendToSheet(string $id, array $token, $data)
 {
     $client = new Google_Client();
 
@@ -12,17 +12,10 @@ function appendToSheet(string $id, array $token)
     $service = new Google_Service_Sheets($client);
 
     try {
-        $range = 'A1:B1';
-        $values = [
-            [
-                'TEST 1',
-                'IVAN 1'
-            ],
-            [
-                'TEST 2',
-                'IVAN 2'
-            ]
-        ];
+        $range = 'A1:D1';
+
+        $values = [$data];
+
         $body = new Google_Service_Sheets_ValueRange([
             'values' => $values
         ]);

@@ -32,7 +32,7 @@ class ApiTokensMigration_100 extends Migration
                     ]
                 ),
                 new Column(
-                    'acess_token',
+                    'access_token',
                     [
                         'type' => Column::TYPE_TEXT,
                         'notNull' => true,
@@ -47,7 +47,7 @@ class ApiTokensMigration_100 extends Migration
                 'TABLE_TYPE' => 'BASE TABLE',
                 'AUTO_INCREMENT' => '',
                 'ENGINE' => 'InnoDB',
-                'TABLE_COLLATION' => 'utf8mb4_0900_ai_ci',
+                'TABLE_COLLATION' => 'utf8_general_ci',
             ],
         ]);
     }
