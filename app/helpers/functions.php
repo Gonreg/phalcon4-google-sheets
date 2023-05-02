@@ -106,7 +106,7 @@ function getGoogleAuthToken()
         ]
     ];
     $token = GoogleOauthToken::findFirst();
-    if (!$token || $token['expires_at'] < time()) {
+    if (!$token || $token->expires_at < time()) {
         $adapter = new Google($config);
         $adapter->authenticate();
         $googleOauthToken = $adapter->getAccessToken();
@@ -124,7 +124,6 @@ function getGoogleAuthToken()
         ]);
         $token->save();
     }
-
     return ['access_token' => $token->access_token, 'expires_in' => $token->expires_in];
 }
 

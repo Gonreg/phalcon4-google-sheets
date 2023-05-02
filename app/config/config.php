@@ -6,20 +6,12 @@ defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirn
 defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
 
 $config = new Config([
-    /*'database' => [
+    'database' => [
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
         'username'    => 'viovanco_root',
         'password'    => '-0^?Cy?I*?mn',
         'dbname'      => 'viovanco_leads',
-        'charset'     => 'utf8',
-    ],*/
-    'database' => [
-        'adapter'     => 'Mysql',
-        'host'        => 'localhost',
-        'username'    => 'root',
-        'password'    => '1111',
-        'dbname'      => 'lead',
         'charset'     => 'utf8',
     ],
     'application' => [
