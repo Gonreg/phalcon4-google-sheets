@@ -2,128 +2,35 @@
 declare(strict_types=1);
 
 require_once BASE_PATH . '/vendor/autoload.php';
-require_once APP_PATH . '/helpers/sheetFunctions.php';
-require_once APP_PATH . '/helpers/amoFunctions.php';
+require_once APP_PATH . '/helpers/functions.php';
 
 use Hybridauth\Provider\Google;
-use app\models\ApiToken;
 
 class IndexController extends ControllerBase
 {
-    private const GOOGLE_CLIENT_ID = '170736721093-ef2hrocttef8pqlukm6ujt3n35rqbl67.apps.googleusercontent.com';
-    private const GOOGLE_CLIENT_SECRET = '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';
-    private array $config = [
-        'callback' => 'https://dev.viovan.world/api/callback',
-        'keys'     => [
-            'id' => self::GOOGLE_CLIENT_ID,
-            'secret' => self::GOOGLE_CLIENT_SECRET
-        ],
-        'scope'    => 'https://www.googleapis.com/auth/spreadsheets',
-        'authorize_url_parameters' => [
-            'approval_prompt' => 'force', // to pass only when you need to acquire a new refresh token.
-            'access_type' => 'offline'
-        ]
-    ];
-
     /**
+     * @throws \Hybridauth\Exception\Exception
      */
     public function sheetAction()
     {
-        $token = ApiToken::findFirst();
-        $token = json_decode($token->access_token);
-        $token = json_decode(json_encode($token), true);
+        $googleOauthToken = getGoogleAuthToken();
+        $amoOauthToken = getAmoCrmAuthToken();
 
-        $data = $_POST;
+        $leadId = $_POST['leads']['status'][0]['id'];
+        $leadData = json_decode(getLeadById($leadId, $amoOauthToken));
+        $userEmail = json_decode(getUserById($leadData->responsible_user_id, $amoOauthToken))->email;
 
-        $leadId = $data['leads']['status'][0]['id'];
-//        file_put_contents('data.json', json_encode($data), FILE_APPEND);
-
-        $amoData = json_decode(file_get_contents('amoToken.json'));
-//        file_put_contents('data.json', json_encode($amoData), FILE_APPEND);
-
-        $amoToken = $amoData->access_token;
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://vkaftancikov.amocrm.ru/api/v4/leads/' . $leadId,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'GET',
-            CURLOPT_HTTPHEADER => array(
-                'Content-Type: application/json',
-                'Authorization: Bearer ' . $amoToken,
-                'Cookie: session_id=m5dhdoff21jp518ivetocfjg0q; user_lang=ru'
-            ),
-        ));
-
-        $response = curl_exec($curl);
-
-        curl_close($curl);
-
-
-        file_put_contents('data.json', $response);
-
-        $leadData = json_decode($response);
-        $title = $leadData->name;
-        $id = $leadData->id;
-        $price = $leadData->price;
-
-        $responsibleUserId = $leadData->responsible_user_id;
-        $user = json_decode(getUserById($responsibleUserId, $amoToken))->email;
-//        file_put_contents('data.json', $user);
-
-//        if ($token->expires_at < time()) {
-//            // REFRESHING USER TOKEN
-//
-//            $client_id = '170736721093-ef2hrocttef8pqlukm6ujt3n35rqbl67.apps.googleusercontent.com';
-//            $redirect_uri = 'https://'.$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
-//            $client_secret = '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';
-//
-//            $ch = curl_init();
-//            curl_setopt($ch, CURLOPT_URL, "https://accounts.google.com/o/oauth2/token");
-//            curl_setopt($ch, CURLOPT_POST, TRUE);
-//            $code = $_REQUEST['code'];
-//
-//            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-//            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-//            curl_setopt($ch, CURLOPT_POSTFIELDS, array(
-//                'code' => $code,
-//                'client_id' => $client_id,
-//                'client_secret' => $client_secret,
-//                'redirect_uri' => $redirect_uri,
-//                'grant_type' => 'authorization_code'
-//            ));
-//
-//            $data = curl_exec($ch);
-//            var_dump($data);
-//        }
-//        var_dump();
-//        var_dump();
-//        exit();
-
-//        file_put_contents('data.json', json_encode($_POST), FILE_APPEND);
-//        $adapter = new Google($this->config);
-//        $adapter->authenticate();
-//        $accessToken = $adapter->getAccessToken();
-
-        appendToSheet('1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q', $token, [$title, $id, $price, $user]);
-//        $token = new ApiToken();
-//        $token->access_token = $accessToken;
-//        $token->save();
+        appendToSheet(GOOGLE_SHEET_ID, $googleOauthToken, [$leadData->name, $leadData->id, $leadData->price, $userEmail]);
     }
 
     public function callbackAction()
     {
-        try {
+       /* try {
             $adapter = new Google($this->config);
             $adapter->authenticate();
             $accessToken = $adapter->getAccessToken();
             $token = ApiToken::findFirst();
-//            $refreshToken = $adapter->refreshAccessToken();
+            $refreshToken = $adapter->refreshAccessToken();
 
             if (!$token) {
                 $token = new ApiToken();
@@ -146,7 +53,6 @@ class IndexController extends ControllerBase
             $subdomain = 'vkaftancikov'; //Поддомен нужного аккаунта
             $link = 'https://' . $subdomain . '.amocrm.ru/oauth2/access_token'; //Формируем URL для запроса
 
-            /** Соберем данные для запроса */
             $data = [
                 'client_id' => '4cbd5e04-45db-49cd-96c3-ce12d8200326',
                 'client_secret' => '3SWYWcT2sjs42RYZzhvtygIyWYudvDiX2pUl8vvWysJw0AMVmlaivZLJ78cFKzdx',
@@ -155,26 +61,20 @@ class IndexController extends ControllerBase
                 'redirect_uri' => 'https://dev.viovan.world',
             ];
 
-            /**
-             * Нам необходимо инициировать запрос к серверу.
-             * Воспользуемся библиотекой cURL (поставляется в составе PHP).
-             * Вы также можете использовать и кроссплатформенную программу cURL, если вы не программируете на PHP.
-             */
+
             $curl = curl_init(); //Сохраняем дескриптор сеанса cURL
-            /** Устанавливаем необходимые опции для сеанса cURL  */
-            curl_setopt($curl,CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-oAuth-client/1.0');
-            curl_setopt($curl,CURLOPT_URL, $link);
-            curl_setopt($curl,CURLOPT_HTTPHEADER,['Content-Type:application/json']);
-            curl_setopt($curl,CURLOPT_HEADER, false);
-            curl_setopt($curl,CURLOPT_CUSTOMREQUEST, 'POST');
-            curl_setopt($curl,CURLOPT_POSTFIELDS, json_encode($data));
-            curl_setopt($curl,CURLOPT_SSL_VERIFYPEER, 1);
-            curl_setopt($curl,CURLOPT_SSL_VERIFYHOST, 2);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_USERAGENT, 'amoCRM-oAuth-client/1.0');
+            curl_setopt($curl, CURLOPT_URL, $link);
+            curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
+            curl_setopt($curl, CURLOPT_HEADER, false);
+            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+            curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 1);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
             $out = curl_exec($curl); //Инициируем запрос к API и сохраняем ответ в переменную
             $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
             curl_close($curl);
-            /** Теперь мы можем обработать ответ, полученный от сервера. Это пример. Вы можете обработать данные своим способом. */
             $code = (int)$code;
             $errors = [
                 400 => 'Bad request',
@@ -186,22 +86,15 @@ class IndexController extends ControllerBase
                 503 => 'Service unavailable',
             ];
 
-            try
-            {
-                /** Если код ответа не успешный - возвращаем сообщение об ошибке  */
+            try {
                 if ($code < 200 || $code > 204) {
-                    throw new Exception(isset($errors[$code]) ? $errors[$code] : 'Undefined error', $code);
+                    throw new Exception($errors[$code] ?? 'Undefined error', $code);
                 }
-            }
-            catch(Exception $e)
-            {
+            } catch (Exception $e) {
                 die('Ошибка: ' . $e->getMessage() . PHP_EOL . 'Код ошибки: ' . $e->getCode());
             }
 
-            /**
-             * Данные получаем в формате JSON, поэтому, для получения читаемых данных,
-             * нам придётся перевести ответ в формат, понятный PHP
-             */
+
             $response = json_decode($out, true);
 
             $access_token = $response['access_token']; //Access токен
@@ -211,16 +104,16 @@ class IndexController extends ControllerBase
 
             file_put_contents('amoToken.json', $out);
 
-            //echo $access_token;
 
         } catch (Exception $error) {
             echo $error->getMessage();
-        }
+        }*/
+        echo 'А зачем этот метод?)';
     }
 
     public function testAction()
     {
-        $data = $_POST;
+        /*$data = $_POST;
         $leadId = $data['leads']['status']['id'];
 
         $amoData = json_decode(file_get_contents('amoToken.json', true));
@@ -250,17 +143,13 @@ class IndexController extends ControllerBase
 
 
         file_put_contents('data.json', json_encode($response), FILE_APPEND);
-        echo 'Success write';
+        echo 'Success write';*/
+        echo 'А зачем этот метод';
     }
 
     public function indexAction()
     {
-        $amoData = json_decode(file_get_contents('amoToken.json'));
-        $amoToken = $amoData->access_token;
-        var_dump($amoToken);
-        exit();
-        $token = ApiToken::findFirst(1);
-        $this->view->token = $amoToken;
+        echo 'А зачем этот метод';
     }
 }
 

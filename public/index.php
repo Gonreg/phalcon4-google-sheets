@@ -35,7 +35,7 @@ try {
      * Include Autoloader
      */
     include APP_PATH . '/config/loader.php';
-
+    include APP_PATH . '/config/config.php';
     /**
      * Handle the request
      */

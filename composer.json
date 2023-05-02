@@ -2,7 +2,8 @@
   "require": {
     "google/apiclient": "2.0",
     "hybridauth/hybridauth": "~3.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-curl": "*"
   },
   "require-dev": {
     "phalcon/migrations": "^2.2"

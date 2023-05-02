@@ -3,10 +3,10 @@
 namespace app\models;
 
 use Phalcon\Mvc\Model;
-class ApiToken extends Model
+class GoogleOauthToken extends Model
 {
     public function initialize()
     {
-        $this->setSource('api_tokens');
+        $this->setSource('google_oauth_token');
     }
 }
