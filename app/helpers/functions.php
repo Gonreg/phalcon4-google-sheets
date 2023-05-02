@@ -124,14 +124,14 @@ function getGoogleAuthToken()
         $token->save();
     }
 
-    return $token['access_token'];
+    return $token->access_token;
 }
 
 function getAmoCrmAuthToken()
 {
     $token = AmoOauthToken::findFirst();
 
-    if (!$token || $token['expires_at'] < time()) {
+    if (!$token || $token->expires_at < time()) {
         $amoOauthToken = amoAuth();
 
         if(!$token) {
@@ -142,7 +142,7 @@ function getAmoCrmAuthToken()
         $token->save();
     }
 
-    return $token['access_token'];
+    return $token->access_token;
 }
 
 function amoAuth()

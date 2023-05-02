@@ -29,22 +29,22 @@ const AMO_CLIENT_REDIRECT_URI = 'https://dev.viovan.world';
 const AMO_CLIENT_SUBDOMAIN = 'vkaftancikov';*/
 
 $config = new Config([
-    /*'database' => [
+    'database' => [
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
         'username'    => 'viovanco_root',
         'password'    => '-0^?Cy?I*?mn',
         'dbname'      => 'viovanco_leads',
         'charset'     => 'utf8',
-    ],*/
-    'database' => [
+    ],
+    /*'database' => [
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
         'username'    => 'root',
         'password'    => '1111',
         'dbname'      => 'lead',
         'charset'     => 'utf8',
-    ],
+    ],*/
     'application' => [
         'appDir'         => APP_PATH . '/',
         'controllersDir' => APP_PATH . '/controllers/',
