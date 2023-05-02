@@ -151,7 +151,7 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        var_dump(getGoogleAuthToken());
+        var_dump(getAmoCrmAuthToken());
         exit(1);
 
     }
