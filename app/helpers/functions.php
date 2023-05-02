@@ -95,42 +95,64 @@ function getGoogleAuthToken()
 
     $config = [
         'callback' => $_ENV['GOOGLE_CLIENT_CALLBACK_URI'],
-        'keys'     => [
+        'keys' => [
             'id' => $_ENV['GOOGLE_CLIENT_ID'],
             'secret' => $_ENV['GOOGLE_CLIENT_SECRET']
         ],
-        'scope'    => 'https://www.googleapis.com/auth/spreadsheets',
+        'scope' => 'https://www.googleapis.com/auth/spreadsheets',
         'authorize_url_parameters' => [
-            'approval_prompt' => 'force',
+            'prompt' => 'consent',
             'access_type' => 'offline'
         ]
     ];
     $token = GoogleOauthToken::findFirst();
-    if (!$token || $token->expires_at < time()) {
+
+    if (!$token) {
+        $token = new GoogleOauthToken();
         $adapter = new Google($config);
         $adapter->authenticate();
         $googleOauthToken = $adapter->getAccessToken();
 
-        if(!$token) {
-            $token = new GoogleOauthToken();
-        }
-
         $token->assign([
             'access_token' => $googleOauthToken['access_token'],
-            'refresh_token' => null,
+            'refresh_token' => $googleOauthToken['refresh_token'],
+            'expires_in' => $googleOauthToken['expires_in'],
+            'expires_at' => $googleOauthToken['expires_at'],
+            'token_type' => $googleOauthToken['token_type']
+        ]);
+        $token->save();
+
+    }
+
+    if ($token->expires_at < time()) {
+        $adapter = new Google($config);
+        $adapter->setAccessToken([
+            'access_token' => $token->access_token,
+            'expires_in' => $token->expires_in,
+            'refresh_token' => $token->refresh_token,
+            'token_type' => $token->token_type,
+            'expires_at' => $token->expires_at
+        ]);
+        $adapter->refreshAccessToken();
+        $googleOauthToken = $adapter->getAccessToken();
+        $adapter->authenticate();
+        $token->assign([
+            'access_token' => $googleOauthToken['access_token'],
+            'refresh_token' => $googleOauthToken['refresh_token'],
             'expires_in' => $googleOauthToken['expires_in'],
             'expires_at' => $googleOauthToken['expires_at'],
             'token_type' => $googleOauthToken['token_type']
         ]);
         $token->save();
     }
+
     return ['access_token' => $token->access_token, 'expires_in' => $token->expires_in];
 }
 
 function getAmoCrmAuthToken()
 {
     $token = AmoOauthToken::findFirst();
-    if(!$token) {
+    if (!$token) {
         $amoOauthToken = amoAuth();
         $token = new AmoOauthToken();
         $token->assign($amoOauthToken);
@@ -158,15 +180,15 @@ function amoAuth()
     ];
 
     $curl = curl_init();
-    curl_setopt($curl,CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-oAuth-client/1.0');
-    curl_setopt($curl,CURLOPT_URL, $link);
-    curl_setopt($curl,CURLOPT_HTTPHEADER,['Content-Type:application/json']);
-    curl_setopt($curl,CURLOPT_HEADER, false);
-    curl_setopt($curl,CURLOPT_CUSTOMREQUEST, 'POST');
-    curl_setopt($curl,CURLOPT_POSTFIELDS, json_encode($data));
-    curl_setopt($curl,CURLOPT_SSL_VERIFYPEER, 1);
-    curl_setopt($curl,CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_USERAGENT, 'amoCRM-oAuth-client/1.0');
+    curl_setopt($curl, CURLOPT_URL, $link);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
+    curl_setopt($curl, CURLOPT_HEADER, false);
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 1);
+    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
     $out = curl_exec($curl); //Инициируем запрос к API и сохраняем ответ в переменную
     $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
@@ -182,14 +204,11 @@ function amoAuth()
         503 => 'Service unavailable',
     ];
 
-    try
-    {
+    try {
         if ($code < 200 || $code > 204) {
             throw new Exception($errors[$code] ?? 'Undefined error', $code);
         }
-    }
-    catch(Exception $e)
-    {
+    } catch (Exception $e) {
         die('Ошибка: ' . $e->getMessage() . PHP_EOL . 'Код ошибки: ' . $e->getCode());
     }
 
@@ -217,15 +236,15 @@ function amoRefreshToken($refreshToken)
     ];
 
     $curl = curl_init(); //Сохраняем дескриптор сеанса cURL
-    curl_setopt($curl,CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-oAuth-client/1.0');
-    curl_setopt($curl,CURLOPT_URL, $link);
-    curl_setopt($curl,CURLOPT_HTTPHEADER,['Content-Type:application/json']);
-    curl_setopt($curl,CURLOPT_HEADER, false);
-    curl_setopt($curl,CURLOPT_CUSTOMREQUEST, 'POST');
-    curl_setopt($curl,CURLOPT_POSTFIELDS, json_encode($data));
-    curl_setopt($curl,CURLOPT_SSL_VERIFYPEER, 1);
-    curl_setopt($curl,CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_USERAGENT, 'amoCRM-oAuth-client/1.0');
+    curl_setopt($curl, CURLOPT_URL, $link);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
+    curl_setopt($curl, CURLOPT_HEADER, false);
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 1);
+    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
     $out = curl_exec($curl); //Инициируем запрос к API и сохраняем ответ в переменную
     $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
@@ -240,14 +259,11 @@ function amoRefreshToken($refreshToken)
         503 => 'Service unavailable',
     ];
 
-    try
-    {
+    try {
         if ($code < 200 || $code > 204) {
             throw new Exception(isset($errors[$code]) ? $errors[$code] : 'Undefined error', $code);
         }
-    }
-    catch(Exception $e)
-    {
+    } catch (Exception $e) {
         die('Ошибка: ' . $e->getMessage() . PHP_EOL . 'Код ошибки: ' . $e->getCode());
     }
 
