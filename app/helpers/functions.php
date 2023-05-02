@@ -60,7 +60,7 @@ function getLeadById($leadId, $oauthToken)
     return $response;
 }
 
-function appendToSheet(string $id, array $token, $data)
+function appendToSheet(string $id, $token, $data)
 {
     $client = new Google_Client();
 
@@ -92,6 +92,7 @@ function appendToSheet(string $id, array $token, $data)
  */
 function getGoogleAuthToken()
 {
+
     $config = [
         'callback' => $_ENV['GOOGLE_CLIENT_CALLBACK_URI'],
         'keys'     => [
@@ -124,7 +125,7 @@ function getGoogleAuthToken()
         $token->save();
     }
 
-    return $token->access_token;
+    return ['access_token' => $token->access_token, 'expires_in' => $token->expires_in];
 }
 
 function getAmoCrmAuthToken()
