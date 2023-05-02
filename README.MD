@@ -67,8 +67,11 @@ server {
   }
 ```
 
-* Приложение развернуто на тестовом сервере  
+* Приложение развернуто на тестовом сервере     
 <a href="https://dev.viovan.world/">GoToDemo</a>
+
+* Ссылка на Гугл Таблицу   
+<a href="https://docs.google.com/spreadsheets/d/1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q/edit?hl=ru#gid=0">Sheet</a>
 
 #### Используемый стек
 
