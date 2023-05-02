@@ -20,7 +20,8 @@ class IndexController extends ControllerBase
         $leadData = json_decode(getLeadById($leadId, $amoOauthToken));
         $userEmail = json_decode(getUserById($leadData->responsible_user_id, $amoOauthToken))->email;
 
-        appendToSheet(GOOGLE_SHEET_ID, $googleOauthToken, [$leadData->name, $leadData->id, $leadData->price, $userEmail]);
+        appendToSheet($_ENV['GOOGLE_SHEET_ID'], $googleOauthToken, [$leadData->name, $leadData->id, $leadData->price, $userEmail]);
+
     }
 
     public function callbackAction()
@@ -113,6 +114,7 @@ class IndexController extends ControllerBase
 
     public function testAction()
     {
+        var_dump(getGoogleAuthToken());
         /*$data = $_POST;
         $leadId = $data['leads']['status']['id'];
 
@@ -149,7 +151,9 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        echo 'А зачем этот метод';
+        var_dump(getGoogleAuthToken());
+        exit(1);
+
     }
 }
 

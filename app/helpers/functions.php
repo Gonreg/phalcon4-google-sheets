@@ -92,10 +92,21 @@ function appendToSheet(string $id, array $token, $data)
  */
 function getGoogleAuthToken()
 {
+    $config = [
+        'callback' => $_ENV['GOOGLE_CLIENT_CALLBACK_URI'],
+        'keys'     => [
+            'id' => $_ENV['GOOGLE_CLIENT_ID'],
+            'secret' => $_ENV['GOOGLE_CLIENT_SECRET']
+        ],
+        'scope'    => 'https://www.googleapis.com/auth/spreadsheets',
+        'authorize_url_parameters' => [
+            'approval_prompt' => 'force',
+            'access_type' => 'offline'
+        ]
+    ];
     $token = GoogleOauthToken::findFirst();
-
     if (!$token || $token['expires_at'] < time()) {
-        $adapter = new Google(GOOGLE_CONFIG);
+        $adapter = new Google($config);
         $adapter->authenticate();
         $googleOauthToken = $adapter->getAccessToken();
 
@@ -136,13 +147,13 @@ function getAmoCrmAuthToken()
 
 function amoAuth()
 {
-    $link = 'https://' . AMO_CLIENT_SUBDOMAIN . '.amocrm.ru/oauth2/access_token'; //Формируем URL для запроса
+    $link = 'https://' . $_ENV['AMO_CLIENT_SUBDOMAIN'] . '.amocrm.ru/oauth2/access_token'; //Формируем URL для запроса
     $data = [
-        'client_id' => AMO_CLIENT_ID,
-        'client_secret' => AMO_CLIENT_SECRET,
-        'redirect_uri' => AMO_CLIENT_REDIRECT_URI,
-        'grant_type' => AMO_CLIENT_GRANT_TYPE,
-        'code' => AMO_CLIENT_SECRET_CODE
+        'client_id' => $_ENV['AMO_CLIENT_ID'],
+        'client_secret' => $_ENV['AMO_CLIENT_SECRET'],
+        'redirect_uri' => $_ENV['AMO_CLIENT_REDIRECT_URI'],
+        'grant_type' => $_ENV['AMO_CLIENT_GRANT_TYPE'],
+        'code' => $_ENV['AMO_CLIENT_SECRET_CODE']
     ];
 
     $curl = curl_init();

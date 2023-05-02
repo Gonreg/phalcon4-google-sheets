@@ -7,6 +7,6 @@ class GoogleOauthToken extends Model
 {
     public function initialize()
     {
-        $this->setSource('google_oauth_token');
+        $this->setSource('google_oauth_tokens');
     }
 }

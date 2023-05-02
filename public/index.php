@@ -1,8 +1,11 @@
 <?php
 declare(strict_types=1);
-//phpinfo();
-//exit();
+
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+
 use Phalcon\Di\FactoryDefault;
+
+
 
 error_reporting(E_ALL);
 
@@ -39,6 +42,9 @@ try {
     /**
      * Handle the request
      */
+
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
+    $dotenv->safeLoad();
 
     $application = new \Phalcon\Mvc\Application($di);
 

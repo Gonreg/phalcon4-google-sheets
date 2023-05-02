@@ -8,6 +8,6 @@ class AmoOauthToken extends Model
 {
     public function initialize()
     {
-        $this->setSource('amo_oauth_token');
+        $this->setSource('amo_oauth_tokens');
     }
 }
