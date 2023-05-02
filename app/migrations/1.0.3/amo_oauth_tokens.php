@@ -9,7 +9,7 @@ use Phalcon\Migrations\Mvc\Model\Migration;
 /**
  * Class AmoOauthTokensMigration_100
  */
-class AmoOauthTokensMigration_100 extends Migration
+class AmoOauthTokensMigration_103 extends Migration
 {
     /**
      * Define the table structure

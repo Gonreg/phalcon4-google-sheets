@@ -9,7 +9,7 @@ use Phalcon\Migrations\Mvc\Model\Migration;
 /**
  * Class GoogleOauthTokensMigration_100
  */
-class GoogleOauthTokensMigration_100 extends Migration
+class GoogleOauthTokensMigration_103 extends Migration
 {
     /**
      * Define the table structure
