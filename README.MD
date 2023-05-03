@@ -39,6 +39,10 @@ GOOGLE_CLIENT_CALLBACK_URI=# GOOGLE CALLBACK URI
 `vendor/bin/phalcon-migrations run
 `
 
+### ШАГ №5
+
+Перейти на главную страницу, для первоначальной авторизации Google
+
 ##### ПРИЛОЖЕНИЕ
 
 * Конфигурация Nginx:
