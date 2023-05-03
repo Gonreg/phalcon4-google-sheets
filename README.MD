@@ -10,8 +10,20 @@
 
 ### ШАГ №2
 
-Переименовываем `.env.example` в `.env` и заполняем необходимыми данными, в комментариях указано, что должно быть в
-каждом поле
+Переименовываем `.env.example` в `.env` и заполняем необходимыми данными
+```
+AMO_CLIENT_ID=# Айди интеграции
+AMO_CLIENT_SECRET=# Секретный ключ интеграции
+AMO_CLIENT_GRANT_TYPE=authorization_code
+AMO_CLIENT_SECRET_CODE=# Ключ авторизации
+AMO_CLIENT_REDIRECT_URI=# REDIRECT URI
+AMO_CLIENT_SUBDOMAIN=# Субдомен 
+
+GOOGLE_SHEET_ID=# Айди гугл таблицы
+GOOGLE_CLIENT_ID=# Айди гугл аккаунта
+GOOGLE_CLIENT_SECRET=# Секретный ключ гугл аккаунта
+GOOGLE_CLIENT_CALLBACK_URI=# GOOGLE CALLBACK URI
+```
 
 ### ШАГ №3
 
@@ -55,6 +67,11 @@ server {
   }
 ```
 
+* Приложение развернуто на тестовом сервере     
+<a href="https://dev.viovan.world/">GoToDemo</a>
+
+* Ссылка на Гугл Таблицу   
+<a href="https://docs.google.com/spreadsheets/d/1hPLuV0t7H9QfPp4N_YJ-A7vfdMvb18-9WFAcDdSTy5Q/edit?hl=ru#gid=0">Sheet</a>
 
 #### Используемый стек
 
